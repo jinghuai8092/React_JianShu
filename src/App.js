@@ -1,8 +1,9 @@
+import Header from "./common/header";
 
 function App() {
   return (
-    <div className="dell">
-      Hello world!
+    <div>
+      <Header/>
     </div>
   );
 }
