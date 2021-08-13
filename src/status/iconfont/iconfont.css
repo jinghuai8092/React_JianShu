@@ -1,0 +1,34 @@
+
+/* import { createGlobalStyle } from 'styled-components' */
+
+
+/* export const IconFontGlobalStyle= createGlobalStyle` */
+@font-face {
+  font-family: 'iconfont';
+  src: url('./iconfont.woff2?t=1628811875552') format('woff2'),
+       url('./iconfont.woff?t=1628811875552') format('woff'),
+       url('./iconfont.ttf?t=1628811875552') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-fangdajing:before {
+  content: "\e633";
+}
+
+.icon-Aa:before {
+  content: "\e636";
+}
+
+.icon-Pensyumaobi:before {
+  content: "\e708";
+} 
+/* `; */
+
+

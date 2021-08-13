@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './style.js';
 import App from './App';
 import {GlobalStyle} from './style';
+// import {IconFontGlobalStyle} from './status/iconfont/iconfont'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+    <App >
       <GlobalStyle/>
-    {/* </App> */}
-  </React.StrictMode>,
+      {/* <IconFontGlobalStyle/> */}
+    </App> ,
   document.getElementById('root')
 );
