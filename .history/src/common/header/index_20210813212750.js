@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {actionCreators} from './store';
 import {
     HeaderWrapper
     , Nav
@@ -57,10 +56,16 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         handleInputFocus() {
-            dispatch(actionCreators.searchFocus());
+            const action = {
+                type: 'search_focus'
+            };
+            dispatch(action);
         },
         handleInputBlur() {
-            dispatch(actionCreators.searchBlur());
+            const action = {
+                type: 'search_blur'
+            };
+            dispatch(action);
         }
     }
 }

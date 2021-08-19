@@ -43,7 +43,24 @@ export const NavItem = styled.div`
 export const SearchWrapper = styled.div`
     float:left;
     position:relative;
-    
+    .slide-enter{
+        transition:all .2s ease-out;
+    }
+    .slide-enter-active{
+        width:240px;
+    }
+    .slide-enter-done{
+        width:240px;
+    }
+    .slide-exit{
+        transition:all .2s ease-out;
+    }
+    .slide-exit-active{
+        width:160px;
+    }
+    .slide-exit-done{
+        width:160px;
+    }
     .iconfont{
         position:absolute;
         right:5px;
@@ -78,24 +95,6 @@ color:#666;
 }
 &.focused{
     // width:240px;
-}
-&.slide-enter{
-    transition:all .2s ease-out;
-}
-&.slide-enter-active{
-    width:240px;
-}
-&.slide-enter-done{
-    width:240px;
-}
-&.slide-exit{
-    transition:all .2s ease-out;
-}
-&.slide-exit-active{
-    width:160px;
-}
-&.slide-exit-done{
-    width:160px;
 }
 `
 export const Addition = styled.div`
