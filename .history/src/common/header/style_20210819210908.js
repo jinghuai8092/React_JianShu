@@ -127,7 +127,7 @@ margin-bottom:10px;
 line-height:20px;
 border:1px solid #ddd;
 color:#787878;
-border-radius:3px;
+border-radius:2px;
 `
 export const SearchInfoList = styled.div`
 overflow:hidden;

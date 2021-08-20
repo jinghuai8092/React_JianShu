@@ -104,6 +104,7 @@ left:0;
 top:56px;
 width:240px;
 padding:0 20px;
+height:100px;
 box-shadow: 0 0 8px rgba(0,0,0,0.2)
 `
 export const SearchInfoTitle=styled.div`
@@ -126,8 +127,8 @@ margin-right:10px;
 margin-bottom:10px;
 line-height:20px;
 border:1px solid #ddd;
-color:#787878;
-border-radius:3px;
+color:#969696;
+border-radius:2px;
 `
 export const SearchInfoList = styled.div`
 overflow:hidden;

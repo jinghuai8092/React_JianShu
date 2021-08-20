@@ -66,9 +66,7 @@ const Header = (props) => {
                         ></NavSearch>
                     </CSSTransition>
                     <i className={props.focused ? 'focused iconfont' : 'iconfont'}>&#xe633;</i>
-                {
-                    getListArea(props.focused)
-                }
+
                 </SearchWrapper>
             </Nav>
             <Addition>

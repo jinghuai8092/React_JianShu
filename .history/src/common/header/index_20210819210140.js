@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { actionCreators } from './store';
+import {actionCreators} from './store';
 import {
     HeaderWrapper
     , Nav
@@ -9,39 +9,13 @@ import {
     , NavSearch
     , Addition
     , Button
-    , SearchInfo
-    , SearchInfoTitle
-    , SearchInfoSwitch
-    , SearchInfoList
-    , SearchInfoItem
+    ,SearchInfo
+    ,SearchInfoTitle
+    ,SearchInfoSwitch
     , SearchWrapper
 } from './style'
 import '../../status/iconfont/iconfont.css'
 import { CSSTransition } from 'react-transition-group';
-
-const getListArea = (show) => {
-    if (show) {
-        return (
-            <SearchInfo>
-                <SearchInfoTitle>
-                    Popular Searches
-                    <SearchInfoSwitch>Change</SearchInfoSwitch>
-                </SearchInfoTitle>
-                <SearchInfoList>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                    <SearchInfoItem>Education</SearchInfoItem>
-                </SearchInfoList>
-            </SearchInfo>
-        )
-    } else {
-        return null;
-    }
-}
 
 const Header = (props) => {
     return (
@@ -66,9 +40,12 @@ const Header = (props) => {
                         ></NavSearch>
                     </CSSTransition>
                     <i className={props.focused ? 'focused iconfont' : 'iconfont'}>&#xe633;</i>
-                {
-                    getListArea(props.focused)
-                }
+                <SearchInfo>
+                    <SearchInfoTitle>
+                            Popular Searches
+                            <SearchInfoSwitch>Change</SearchInfoSwitch>
+                    </SearchInfoTitle>
+                </SearchInfo>
                 </SearchWrapper>
             </Nav>
             <Addition>
@@ -84,7 +61,7 @@ const Header = (props) => {
 const mapStateToProps = (state) => {
     return {
         // focused: state.get('header').get('focused')
-        focused: state.getIn(['header', 'focused'])
+        focused: state.getIn(['header','focused'])
     }
 }
 const mapDispatchToProps = (dispatch) => {
