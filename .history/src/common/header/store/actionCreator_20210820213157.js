@@ -14,6 +14,7 @@ export const searchBlur=()=>({
     type:constants.SEARCH_BLUR
 })
 
+
 export const getList=()=>{
     return (dispatch)=>{
         axios.get('/api/headerList.json').then((res)=>{

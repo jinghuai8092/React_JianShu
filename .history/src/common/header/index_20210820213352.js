@@ -64,7 +64,7 @@ class Header extends Component {
                             <NavSearch
                                 className={focused ? 'focused' : ''}
                                 onFocus={handleInputFocus}
-                                onBlur={handleInputBlur}
+                                onBlur={this.props.handleInputBlur}
                             ></NavSearch>
                         </CSSTransition>
                         <i className={focused ? 'focused iconfont' : 'iconfont'}>&#xe633;</i>
