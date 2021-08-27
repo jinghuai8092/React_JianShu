@@ -21,9 +21,8 @@ export const mouseEnter=()=>({
 export const mouseLeave=()=>({
     type:constants.MOUSE_lEAVE
 })
-export const changePage=(page)=>({
-    type:constants.CHANGE_PAGE,
-    page
+export const changePage=()=>({
+    
 })
 export const getList=()=>{
     return (dispatch)=>{

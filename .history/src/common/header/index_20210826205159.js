@@ -21,19 +21,16 @@ import { CSSTransition } from 'react-transition-group';
 
 class Header extends Component {
     getListArea() {
-        const { focused, list, totalPage, mouseIn, page, handleMouseEnter, handleMouseLeave, handChangePage } = this.props;
+        const {focused,list,page,handleMouseEnter,handleMouseLeave}=this.props;
         // console.log(list);
-        const jsList = list.toJS();
-        const pageList = [];
-        if (jsList.length) {
-            for (let i = ((page - 1) * 10); i < page * 10; i++) {
-                pageList.push(
-                    <SearchInfoItem key={jsList[i]}>{jsList[i]}</SearchInfoItem>
-                )
-            }
+        const jsList=list.toJS();
+        const pageList=[];
+        for(let i=((page-1)*10);i<page*10;i++){
+            pageList.push(
+                <SearchInfoItem key={jsList[i]}>{jsList[i]}</SearchInfoItem>
+            )
         }
-
-        if (focused || mouseIn) {
+        if (focused) {
             return (
                 <SearchInfo onMouseEnter=
                     {handleMouseEnter}
@@ -42,9 +39,7 @@ class Header extends Component {
                     }>
                     <SearchInfoTitle>
                         Popular Searches
-                        <SearchInfoSwitch onClick={
-                            () => handChangePage(page, totalPage)
-                        }>Change</SearchInfoSwitch>
+                        <SearchInfoSwitch>Change</SearchInfoSwitch>
                     </SearchInfoTitle>
                     <SearchInfoList>
                         {
@@ -60,7 +55,7 @@ class Header extends Component {
     }
 
     render() {
-        const { focused, handleInputFocus, handleInputBlur } = this.props;
+        const {focused,handleInputFocus,handleInputBlur}=this.props;
         return (
             <HeaderWrapper>
                 <Logo />
@@ -164,14 +159,13 @@ const mapStateToProps = (state) => {
     return {
         // focused: state.get('header').get('focused')
         focused: state.getIn(['header', 'focused']),
-        list: state.getIn(['header', 'list']),
-        page: state.getIn(['header', 'page']),
-        totalPage: state.getIn(['header', 'totalPage']),
-        mouseIn: state.getIn(['header', 'mouseIn'])
+        list: state.getIn(['header','list']),
+        page: state.getIn(['header','page']),
+        mouseIn: state.getIn(['header','mouseIn'])
         // pageList: state.getIn(['header','pageList']),
 
 
-    }
+    } 
 }
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -182,19 +176,11 @@ const mapDispatchToProps = (dispatch) => {
         handleInputBlur() {
             dispatch(actionCreators.searchBlur());
         },
-        handleMouseEnter() {
+        handleMouseEnter(){
             dispatch(actionCreators.mouseEnter());
         },
-        handleMouseLeave() {
+        handleMouseLeave(){
             dispatch(actionCreators.mouseLeave());
-        },
-        handChangePage(page, totalPage) {
-            if (page < totalPage) {
-                dispatch(actionCreators.changePage(page + 1));
-            }
-            else {
-                dispatch(actionCreators.changePage(1));
-            }
         }
     }
 }
