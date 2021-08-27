@@ -43,8 +43,8 @@ class Header extends Component {
                     <SearchInfoTitle>
                         Popular Searches
                         <SearchInfoSwitch onClick={
-                            () => handChangePage(page, totalPage,this.spinIcon)
-                        }>                        <i ref={(icon)=>{this.spinIcon=icon}} className={'iconfont spin'}>&#xe606;</i>
+                            () => handChangePage(page, totalPage)
+                        }>                        <i className={'iconfont'}>&#xe633;</i>
                         Change</SearchInfoSwitch>
                     </SearchInfoTitle>
                     <SearchInfoList>
@@ -83,7 +83,7 @@ class Header extends Component {
                                 onBlur={handleInputBlur}
                             ></NavSearch>
                         </CSSTransition>
-                        <i className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>&#xe633;</i>
+                        <i className={focused ? 'focused iconfont' : 'iconfont'}>&#xe633;</i>
                         {
                             this.getListArea()
                         }
@@ -189,19 +189,7 @@ const mapDispatchToProps = (dispatch) => {
         handleMouseLeave() {
             dispatch(actionCreators.mouseLeave());
         },
-        handChangePage(page, totalPage,spin) {
-            let originAngle=spin.style.transform.replace(/[^0-9]/ig,'');
-            if(originAngle){
-                originAngle=parseInt(originAngle,10);
-            }else{
-                originAngle=0;
-            }
-            if(originAngle<999){
-                spin.style.transform='rotate('+(originAngle+360)+'deg)';
-            }else{
-                spin.style.transform='rotate(0deg)';
-            }
-            console.log(originAngle)
+        handChangePage(page, totalPage) {
             if (page < totalPage) {
                 dispatch(actionCreators.changePage(page + 1));
             }

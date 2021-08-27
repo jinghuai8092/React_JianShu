@@ -1,13 +1,8 @@
-
-/* import { createGlobalStyle } from 'styled-components' */
-
-
-/* export const IconFontGlobalStyle= createGlobalStyle` */
 @font-face {
-  font-family: 'iconfont';
-  src: url('./iconfont.woff2?t=1628811875552') format('woff2'),
-       url('./iconfont.woff?t=1628811875552') format('woff'),
-       url('./iconfont.ttf?t=1628811875552') format('truetype');
+  font-family: "iconfont"; /* Project id 2741810 */
+  src: url('iconfont.woff2?t=1630026596942') format('woff2'),
+       url('iconfont.woff?t=1630026596942') format('woff'),
+       url('iconfont.ttf?t=1630026596942') format('truetype');
 }
 
 .iconfont {
@@ -17,7 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
+
+.icon-spin:before {
+  content: "\e606";
+}
+
 .icon-fangdajing:before {
   content: "\e633";
 }
@@ -28,7 +27,5 @@
 
 .icon-Pensyumaobi:before {
   content: "\e708";
-} 
-/* `; */
-
+}
 

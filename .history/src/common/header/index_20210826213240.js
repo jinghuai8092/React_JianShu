@@ -200,8 +200,8 @@ const mapDispatchToProps = (dispatch) => {
                 spin.style.transform='rotate('+(originAngle+360)+'deg)';
             }else{
                 spin.style.transform='rotate(0deg)';
+
             }
-            console.log(originAngle)
             if (page < totalPage) {
                 dispatch(actionCreators.changePage(page + 1));
             }

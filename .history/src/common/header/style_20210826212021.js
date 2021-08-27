@@ -117,12 +117,10 @@ export const SearchInfoSwitch=styled.span`
     float:right;
     font-size:13px;
     .spin{
-        display:block;
-        float:left;
         font-size:12px;
         margin-right:2px;
         transition:all .2s ease-in;
-        transform-origin:center center;
+        transform:rotate(0deg);
     }
 `
 export const SearchInfoItem=styled.a`
