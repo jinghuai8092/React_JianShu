@@ -11,8 +11,8 @@ function App() {
         <div>
           <Header />
           <BrowserRouter>
-            <Route path='/' exact render={() => <div>Home</div>}></Route>
-            <Route path='/detail' exact render={() => <div>Detail</div>}></Route>
+            <Route path='/' render={() => <div>Home</div>}></Route>
+            <Route path='/detail' render={() => <div>Detail</div>}></Route>
           </BrowserRouter>
         </div>
       </Provider>
