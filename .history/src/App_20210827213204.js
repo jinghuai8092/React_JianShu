@@ -3,7 +3,7 @@ import store from './store';
 import { BrowserRouter, Route } from "react-router-dom";
 import { Provider } from 'react-redux';
 import Home from './pages/home';
-import Detail from './pages/detail';
+import Detail from './pages/detail'；
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <div>
           <Header />
           <BrowserRouter>
-            <Route path='/' exact component={Home}></Route>
-            <Route path='/detail' component={Detail}></Route>
+            <Route path='/' exact render={() => <div>Home</div>}></Route>
+            <Route path='/detail' exact render={() => <div>Detail</div>}></Route>
           </BrowserRouter>
         </div>
       </Provider>

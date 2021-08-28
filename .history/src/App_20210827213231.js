@@ -3,7 +3,7 @@ import store from './store';
 import { BrowserRouter, Route } from "react-router-dom";
 import { Provider } from 'react-redux';
 import Home from './pages/home';
-import Detail from './pages/detail';
+import Detail from './pages/detail'；
 
 
 function App() {
