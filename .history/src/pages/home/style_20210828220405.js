@@ -4,6 +4,7 @@ export const HomeWrapper = styled.div`
     width:960px;
     margin:0 auto;
     overflow:hidden;
+    margin-left:-18px;
 `;
 
 export const HomeLeft = styled.div`
@@ -25,17 +26,12 @@ export const HomeRight = styled.div`
 export const TopicWrapper = styled.div`
     padding:20px 0 10px 0;
     overflow:hidden;
-    margin-left:-18px;
-
 `
 export const TopicItem = styled.div`
 float:left;
 background:#f7f7f7f;
 height:32px;
 line-height:32px;
-margin-left:18px;
-margin-bottom:18px;
-
 padding-right:10px;
 color:#000;
 font-size:14px;

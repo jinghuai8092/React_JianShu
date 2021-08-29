@@ -8,11 +8,11 @@ class Topic extends Component {
             <TopicWrapper>
                 {this.props.list.map((item) => {
                     return (
-                        <TopicItem key={item.get('id')}>
+                        <TopicItem>
                             <img
                                 className='topic-pic'
                                 src={item.get('imgUrl')} />
-                            {item.get('title')}
+                            Social news
                         </TopicItem>
                     )
                 })}

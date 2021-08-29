@@ -33,9 +33,6 @@ float:left;
 background:#f7f7f7f;
 height:32px;
 line-height:32px;
-margin-left:18px;
-margin-bottom:18px;
-
 padding-right:10px;
 color:#000;
 font-size:14px;
