@@ -1,0 +1,39 @@
+{
+	"success": true,
+	"data": {
+		"topicList": [{
+			"id": 1,
+			"title": "Social News",
+			"imgUrl": "//upload.jianshu.io/collections/images/261938/man-hands-reading-boy-large.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		}, {
+			"id": 2,
+			"title": "Drawing2",
+			"imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+		}],
+		"articleList": [{
+			"id": 1,
+			"title": "This is the Title one",
+            "desc": "This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. ",
+			"imgUrl": "https://img95.699pic.com/photo/40007/4125.jpg_wh300.jpg"
+		}, {
+			"id": 2,
+			"title": "This is the Title two",
+            "desc": "This the content two. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. ",
+			"imgUrl": "https://img95.699pic.com/photo/40007/4125.jpg_wh300.jpg"		}, {
+			"id": 3,
+			"title": "This is the Title three",
+            "desc": "This the content three. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. ",
+			"imgUrl": "https://img95.699pic.com/photo/40007/4125.jpg_wh300.jpg"		}, {
+			"id": 4,
+			"title": "This is the Title four",
+            "desc": "This the content four. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. This the content one. ",
+			"imgUrl": "https://img95.699pic.com/photo/40007/4125.jpg_wh300.jpg"		}],
+		"recommendList": [{
+			"id": 1,
+			"imgUrl": "http://pic.616pic.com/bg_w1180/00/11/34/vo5eyRAGS3.jpg!/fh/300"
+		}, {
+			"id": 2,
+			"imgUrl": "http://pic.616pic.com/bg_w1180/00/04/13/1hHNbhU9ry.jpg!/fh/300"
+		}]
+	}
+}
