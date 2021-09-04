@@ -6,7 +6,8 @@ import {reducer as detailReducer} from '../pages/detail/store'
 const reducer=combineReducers({
     header:headerReducer,
     home:homeReducer,
-    detail:detailReducer
+    detail:detailReducer,
+
 });
 
 export default reducer;
